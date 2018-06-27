@@ -1,0 +1,33 @@
+{
+  "name": "prjctr-gulp-repo",
+  "version": "0.1.0",
+  "description": "projector mail homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProgSelC/prjctr-mail.git"
+  },
+  "author": "ProgSelC",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^8.6.3",
+    "bemto.pug": "^2.1.0",
+    "browser-sync": "^2.24.4",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-stylus": "^2.7.0",
+    "jstransformer": "^1.0.0",
+    "jstransformer-stylus": "^1.5.0"
+  },
+  "bugs": {
+    "url": "https://github.com/ProgSelC/prjctr-gulp-repo/issues"
+  },
+  "homepage": "https://github.com/ProgSelC/prjctr-gulp-repo#readme"
+}
