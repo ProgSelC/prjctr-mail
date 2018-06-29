@@ -1,0 +1,53 @@
+mixin table()
+    table(cellspacing="0", cellpadding="0", border="0")&attributes(attributes)
+        block
+
+mixin contactsSocialTd(imgSrc, alt)
+    td(rowspan=2, style="min-width:38px;text-align:right;")
+        a(href="#")
+            img(src=srcUrl+imgSrc, alt=alt, style="color:#000000;")
+
+mixin contactsTable()
+    +table(width="530", style="font-size:10px;")
+        tr
+            td(rowspan="4")
+                img(src=srcUrl+"avatar.jpg", alt="")
+            td(colspan="5", height="10")
+        tr
+            td Best regards, Andrew
+            +contactsSocialTd("fb.jpg", "Facebook")
+            +contactsSocialTd("tw.jpg", "Twitter")
+            +contactsSocialTd("gplus.jpg", "Google+")
+            +contactsSocialTd("ytube.jpg", "You tube")
+        tr(style="color:#b3b3b3;")
+            td Your Apple Certified Support Professional
+        tr
+            td(colspan="5", height="10")
+
+mixin phoneItemTd(imgSrc, country, phone)
+    td(valign="middle", style="padding:20px 0;")&attributes(attributes)
+        img(src=srcUrl+imgSrc, alt="", style="vertical-align:bottom;")
+        |
+        |
+        span #{country}:
+        | 
+        = phone
+
+mixin phoneTable()
+    +table(width="530", style="font-size:15px;")
+        tr
+            +phoneItemTd("usa.jpg","USA","1(888)572-5876")
+            +phoneItemTd("australia.jpg","AU","1(800)462-715")(align="center")
+            +phoneItemTd("uk.jpg","UK","0(808)189-1280")(align="right")
+
+mixin footerTable()
+    +table(width="530", style="font-size:10px;color:#b3b3b3;")
+        tr
+            td.
+                This email was setnt to #[a(href="mailto:littleuliss@gmail.com", style="color:#000000;") #{'littleuliss@gmail.com.'}]#[br]
+                Please add notification@mackeeper.com to your address book to ensure that our emails reach your inbox.#[br]
+                If you'd prefer not to receive any new from us, here is the #[a(href="#", style="color:#000000;") link] to unsubscribe.#[br]
+                To change your communication preferences use this #[a(href="#", style="color:#000000;") link].#[br]
+                Kromtech Alliance Corp, Richmondstrasse 6, 50667 Cologne, Germany.#[br]#[br]
+                #[a(href="#", style="color:inherit;") Privacy policy]
+        

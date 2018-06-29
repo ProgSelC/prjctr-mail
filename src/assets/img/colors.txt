@@ -1,3 +1,0 @@
-﻿gray: #e6e6e6;
-green: #d9eda5
-gray-text: #bfbfbf

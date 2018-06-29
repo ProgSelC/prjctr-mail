@@ -26,7 +26,7 @@ function serve(done) {
 
 var pugFiles = [
 	'src/**/*.pug',
-	'!src/layouts/**',
+	'!src/globals/**',
 	'!src/blocks/**'
 ];
 
